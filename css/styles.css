@@ -51,7 +51,7 @@ button {
     transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-/* ------------ HEADER ------------ */
+/* ===================HEADER ===================*/
 .header {
     background: #FFFFFF;
     margin-top: 0;
@@ -148,7 +148,7 @@ button {
     color: #404BBF;
 }
 
-/*  ------------ HERO ------------ */
+/* ===================HERO  ===================*/
 .hero {
     background: #2E2F42;
 }
@@ -199,8 +199,8 @@ button {
     background-color: var(--accent-color)
 }
 
-/* ------------ MAIN INDEX ------------ */
-/*  ------------ Sections  ------------ */
+/* =================== MAIN INDEX ===================*/
+/*  ===================Sections =================== */
 .section-title {
     font-weight: 700;
     font-size: 36px;
@@ -328,7 +328,7 @@ button {
     background-color: var(--accent-color);
 }
 
-/* -------- Customers ---------- */
+/*  ===================Customers =================== */
 .customers-list {
     display: flex;
     align-items: center;
@@ -369,8 +369,8 @@ button {
     fill: var(--accent-color);
 }
 
-/*  ------------ MAIN PORTFOLIO ------------ */
-/*  ------------ top menu ------------  */
+/* ===================MAIN PORTFOLIO ===================*/
+/* ===================top menu ===================*/
 .portfolio-container {
     padding-top: 96px;
     padding-bottom: 120px;
@@ -410,7 +410,7 @@ button {
     color: #FFFFFF;
 }
 
-/*  ------------ card gallery ------------  */
+/* ===================card gallery ===================*/
 
 .portfolio-gallery {
     display: flex;
@@ -470,7 +470,7 @@ button {
     transform: translate(0, 0);
 }
 
-/* ------------ FOOTER ------------ */
+/* ===================FOOTER  ===================*/
 .footer-bg {
     background: #2E2F42;
     color: #F4F4FD;
@@ -548,4 +548,50 @@ button {
 .socmedia-list-item-link:hover,
 .socmedia-list-item-link:focus {
     background-color: var(--success-mode-color);
+}
+
+/* ===================MODAL WINDOW================ */
+.backdrop {
+    position: fixed;
+    z-index: inherit;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(46, 47, 66, 0.4);
+}
+
+.modal-wind {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 408px;
+    height: 576px;
+    background: #FCFCFC;
+    box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 2px 1px rgba(0, 0, 0, 0.2);
+    border-radius: 4px;
+    padding: 24px;
+}
+
+.modal-wind-close {
+    display: block;
+    justify-content: center;
+    align-items: center;
+    margin-left: auto;
+    padding: 0;
+    width: 24px;
+    height: 24px;
+    background: #E7E9FC;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.icon-close-black {
+    width: 8px;
+    height: 8px;
+    margin: 0;
+    padding: 0;
+
 }

@@ -17,11 +17,13 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+
     <title>WebStudio</title>
     <link rel="stylesheet" href="./css/styles.css" />
   </head>
   <body>
-    <!--Header-->
+    <!-- =================== Header =================== -->
     <header class="header">
       <div class="container nav-line">
         <nav class="nav-menu-container">
@@ -56,17 +58,25 @@
         </address>
       </div>
     </header>
-    <!--Main-->
+    <!-- =================== Main =================== -->
     <main>
-      <!--Hero-->
+      <!-- =================== Hero =================== o-->
       <section class="hero">
         <div class="hero-bg">
-          <h1 class="hero-title">Effective Solutions for Your Business</h1>
-          <button class="hero-button" type="button">Order Service</button>
+          <h1
+            class="hero-title"
+            data-aos="fade-up"
+            data-aos-anchor-placement="center-bottom"
+          >
+            Effective Solutions for Your Business
+          </h1>
+          <button class="hero-button" type="button" data-modal-open>
+            Order Service
+          </button>
         </div>
       </section>
 
-      <!-- FEATURES-->
+      <!-- =================== FEATURES =================== -->
       <section class="features">
         <div class="container">
           <h2 class="section-title" hidden>Features</h2>
@@ -103,7 +113,7 @@
         </div>
       </section>
 
-      <!--DOING-->
+      <!-- =================== DOING =================== -->
       <section class="doing">
         <div class="container">
           <h2 class="section-title">What are we doing</h2>
@@ -133,7 +143,7 @@
         </div>
       </section>
 
-      <!-- TEAM-->
+      <!-- =================== TEAM =================== -->
       <section class="team">
         <div class="container">
           <h2 class="section-title">Our Team</h2>
@@ -342,7 +352,7 @@
         </div>
       </section>
 
-      <!--CUSTOMERS-->
+      <!--  =================== CUSTOMERS =================== -->
       <section class="customers">
         <div class="container">
           <h2 class="section-title">Customers</h2>
@@ -393,7 +403,7 @@
         </div>
       </section>
     </main>
-    <!--Footer-->
+    <!-- =================== Footer =================== -->
     <footer class="footer-bg">
       <div class="container">
         <div class="footer-navigation">
@@ -453,5 +463,20 @@
         </div>
       </div>
     </footer>
+    <div class="backdrop" data-modal>
+      <div class="modal-wind">
+        <button type="button" class="modal-wind-close" data-modal-close>
+          <svg class="icon icon-close-black">
+            <use href="./images/icons.svg#icon-close-black"></use>
+          </svg>
+        </button>
+      </div>
+    </div>
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+      AOS.init()
+    </script>
+    <script src="/JS/modal.js"></script>
   </body>
 </html>
