@@ -9,8 +9,6 @@
     Element.addEventListener('click', toggleModal);
   });
 
- 
-
   // Закривання вікна по бекдропу
   refs.modal.addEventListener('click', removeModal)
  function removeModal(e) {
